@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(255, 233, 124);
+}
+
+/* Classes */
+.center {
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* Container */
+.container {
+  border: none;
+  width: 18.9em;
+  height: 18.9em;
+  box-shadow: 0 0 12px rgb(232, 121, 50);
+  border-radius: 12px;
+  padding: 0.3em;
+}
+
+/* Doggy */
+.torso {
+  width: 10.9em;
+  height: 4.2em;
+  left: 30%;
+  top: 45%;
+  background-color: rgb(238, 150, 40);
+  border-radius: 0 2.4em 0 3.9em;
+}
+
+.torso-bottom {
+  width: 10.9em;
+  height: 5.4em;
+  left: 30%;
+  top: 45%;
+  background-color: rgb(232, 121, 50);
+  border-radius: 0 2.4em 0 3.9em;
+}
+
+.tail {
+  width: 0.93em;
+  height: 4.2em;
+  top: 32%;
+  left: 81%;
+  background-color: rgb(230, 125, 33);
+  border-radius: 3.9em 0.5em 0 0;
+  transform: rotate(3deg);
+}
+
+.neck {
+  width: 4.2em;
+  height: 1.2em;
+  left: 30%;
+  top: 39%;
+  background-color: rgb(238, 150, 40);
+}
+
+.neck::before {
+  content: "";
+  width: 4.8em;
+  height: 0.27em;
+  top: 0.35em;
+  left: -0.5em;
+  position: absolute;
+  background-color: rgb(80, 130, 189);
+  border: 4.8px solid rgb(54, 83, 128);
+  transform: rotate(2deg);
+  border-radius: 0.24em;
+}
+
+.head {
+  width: 7.8em;
+  height: 3.6em;
+  left: 11%;
+  top: 19.9%;
+  background-color: rgb(238, 150, 40);
+  border-radius: 0.3em 1.2em 0 5.4em;
+}
+
+.head::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 60%;
+  left: 45%;
+  background-color: rgb(206, 33, 37);
+  border-radius: 0.3em 1.2em 3.9em 3.9em;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 20%;
+  left: -0.43em;
+  background-color: black;
+  border-radius: 1em 0 3.9em 3.9em;
+}
+
+.mouth {
+  left: 4.5em;
+  top: 5.4em;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-radius: 45%;
+  transform: rotate(21deg);
+}
+
+.front-ear {
+  width: 1.2em;
+  height: 2.7em;
+  left: 46%;
+  top: 10%;
+  background-color: rgb(206, 33, 37);
+  border-radius: 1.8em 0.3em 0 0;
+}
+
+.back-ear {
+  width: 1.2em;
+  height: 2.7em;
+  left: 41.5%;
+  top: 10%;
+  background-color: rgb(238, 150, 40);
+  border-radius: 1.8em 0.3em 0 0;
+}
+
+.eye {
+  width: 0.5em;
+  height: 0.5em;
+  left: 36.5%;
+  top: 23%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.front-knee {
+  width: 3.1em;
+  height: 2.4em;
+  left: 71.2%;
+  top: 67%;
+  background-color: rgb(238, 150, 40);
+  border-radius: 0 0 0 2.1em;
+}
+
+.front-knee::before {
+  content: "";
+  position: absolute;
+  width: 2.4em;
+  height: 2.4em;
+  left: -4.6em;
+  background-color: rgb(238, 150, 40);
+  border-radius: 0 0 0 1.2em;
+}
+
+.back-knee {
+  width: 3.1em;
+  height: 2.4em;
+  left: 64%;
+  top: 67%;
+  background-color: rgb(230, 125, 33);
+  border-radius: 0 0 0 2.4em;
+}
+
+.back-knee::before {
+  content: "";
+  position: absolute;
+  width: 2.3em;
+  height: 2.4em;
+  left: -4.5em;
+  background-color: rgb(230, 125, 33);
+  border-radius: 0 0 0 1.8em;
+}
+
+.front-foot-base {
+  width: 1.2em;
+  height: 0.35em;
+  left: 81.4%;
+  top: 79%;
+  background-color: rgb(238, 150, 40);
+}
+
+.front-foot-base::before {
+  content: "";
+  position: absolute;
+  width: 1.4em;
+  height: 0.35em;
+  left: -5.53em;
+  background-color: rgb(238, 150, 40);
+}
+
+.back-foot-base {
+  width: 1.3em;
+  height: 0.35em;
+  left: 75%;
+  top: 79%;
+  background-color: rgb(232, 121, 50);
+}
+
+.back-foot-base::before {
+  content: "";
+  position: absolute;
+  width: 1.5em;
+  height: 0.35em;
+  left: -5.35em;
+  background-color: rgb(232, 121, 50);
+}
+
+.front-foot {
+  width: 3.1em;
+  height: 1.1em;
+  left: 71.4%;
+  top: 80.6%;
+  background-color: rgb(238, 150, 40);
+  border-radius: 2em 0 0.3em 0.3em;
+}
+
+.front-foot::before {
+  content: "";
+  position: absolute;
+  width: 2.4em;
+  height: 1.1em;
+  left: -4.62em;
+  background-color: rgb(238, 150, 40);
+  border-radius: 1em 0 0.3em 0.3em;
+}
+
+.back-foot {
+  width: 3.1em;
+  height: 1.1em;
+  left: 64%;
+  top: 80.6%;
+  background-color: rgb(232, 121, 50);
+  border-radius: 2em 0 0 0.3em;
+}
+
+.back-foot::before {
+  content: "";
+  position: absolute;
+  width: 3.1em;
+  height: 1.1em;
+  left: -4.65em;
+  background-color: rgb(232, 121, 50);
+  border-radius: 2em 0 0 0.3em;
+}
